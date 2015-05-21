@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<html ng-app="RESTClientModule">
+<style type="text/css">
+    table, td {
+        border: double;
+    }
+    thead {
+      background-color:darkgray;
+      font-size:20px;
+      font-family:Courier New, Courier, monospace;
+      font-weight:900;
+    }
+</style>
+ 
+<h2>Consuming WCF REST Service in Angular JS</h2>
+<body>
+    <table ng-controller="RESTClientController">
+        <tr>
+           
+            <td>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>UserId</td>
+                            <td>UserName</td>
+                            <td>Password</td>
+                            <td>IdRole</td>
+                           
+                        </tr>
+                    </thead>
+                    <tbody ng-repeat="User in Users">
+                        <tr>
+                            <td> <span>{{User.Id}}</span></td>
+                            <td> <span>{{User.Username}}</span></td>
+                            <td> <span>{{User.Password}}</span></td>
+                            <td> <span>{{User.IdRole}}</span></td>
+                          
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+<script src="~/Scripts/angular.js"></script>
+<script src="~/Scripts/MyScripts/Modules.js"></script>
+<script src="~/Scripts/MyScripts/Services.js"></script>
+<script src="~/Scripts/MyScripts/Controllers.js"></script>

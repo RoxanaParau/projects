@@ -29,6 +29,3 @@ D:\other\CMSProject\CMSProject\bin\PagedList.dll
 D:\other\CMSProject\CMSProject\bin\PagedList.Mvc.dll
 D:\other\CMSProject\CMSProject\bin\PagedList.xml
 D:\other\CMSProject\CMSProject\bin\PagedList.Mvc.xml
-D:\other\CMSProject\CMSProject\obj\Debug\CMSProject.Migrations.InitialCreate.resources
-D:\other\CMSProject\CMSProject\obj\Debug\CMSProject.csproj.GenerateResource.Cache
-D:\other\CMSProject\CMSProject\obj\Debug\CMSProject.Migrations.InitialCreate1.resources

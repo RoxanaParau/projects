@@ -1,0 +1,28 @@
+CREATE TABLE [dbo].[Role] (
+    [ID]   INT            IDENTITY (1, 1) NOT NULL,
+    [Name] NVARCHAR (MAX) NULL,
+    CONSTRAINT [PK_dbo.Role] PRIMARY KEY CLUSTERED ([ID] ASC)
+);
+
+
+CREATE TABLE [dbo].[User] (
+    [ID]       INT            IDENTITY (1, 1) NOT NULL,
+    [Username] NVARCHAR (MAX) NULL,
+    [Password] NVARCHAR (MAX) NULL,
+    [Email]    NVARCHAR (MAX) NULL,
+    [role_ID]  INT            NULL,
+    CONSTRAINT [PK_dbo.User] PRIMARY KEY CLUSTERED ([ID] ASC),
+
+);
+SET IDENTITY_INSERT [dbo].[User] ON
+INSERT INTO [dbo].[User] ([ID], [Username], [Password], [Email], [role_ID]) VALUES (1, N'Test1', N'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3', N'test1@test.coom', 1)
+INSERT INTO [dbo].[User] ([ID], [Username], [Password], [Email], [role_ID]) VALUES (2, N'Test2', N'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3', N'test2@test.coom', 2)
+INSERT INTO [dbo].[User] ([ID], [Username], [Password], [Email], [role_ID]) VALUES (3, N'Test3', N'a94a8fe5ccb19ba61c4c0873d391e987982fbbd3', N'test3@test.coom', 3)
+SET IDENTITY_INSERT [dbo].[User] OFF
+
+SET IDENTITY_INSERT [dbo].[Role] ON
+INSERT INTO [dbo].[Role] ([ID], [Name]) VALUES (1, N'Admin')
+INSERT INTO [dbo].[Role] ([ID], [Name]) VALUES (2, N'ContentManager')
+INSERT INTO [dbo].[Role] ([ID], [Name]) VALUES (3, N'Editor')
+INSERT INTO [dbo].[Role] ([ID], [Name]) VALUES (4, N'SimpleUser')
+SET IDENTITY_INSERT [dbo].[Role] OFF
