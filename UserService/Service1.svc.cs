@@ -5,7 +5,8 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Text;
-
+using CMSProject;
+using UserService.Models;
 namespace UserService
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
@@ -28,6 +29,43 @@ namespace UserService
 
           var res = db.Role.ToArray();
           return res;
+      }
+
+      public bool InsertUser(UserDetails user)
+      {
+          try
+          {
+              User u = new User();
+              u.Email = user.Email;
+              u.Password = Helpers.SHA1.Encode(user.Password);
+              u.role_ID = user.IdRole;
+              u.Username = user.Email;
+              db.User.Add(u);
+              db.SaveChanges();
+              return true;
+          }
+          catch
+          {
+              return false;
+          }
+      }
+      public bool InsertUser1(string username)
+      {
+          try
+          {
+              User u = new User();
+              u.Email = "e@e.com";
+              u.Password = Helpers.SHA1.Encode("bla");
+              u.role_ID = 1;
+              u.Username = username;
+              db.User.Add(u);
+              db.SaveChanges();
+              return true;
+          }
+          catch
+          {
+              return false;
+          }
       }
     }
 }

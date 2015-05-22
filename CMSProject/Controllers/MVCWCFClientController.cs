@@ -22,6 +22,10 @@ ng-repeat - This is an iteration for $scope.Employees so that the data from it c
         {
             return View();
         }
+        public ActionResult Register()
+        {
+            return View();
+        }
 
     }
 }

@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Register";
+}
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script type="text/javascript">
+    $.ajax({
+        url: "http://localhost:50678/Service1.svc/InsertUser1/username=dkjd",
+        type: "POST",
+        data: JSON.stringify([{ "Key": "username", "Value": "Robert" }]),
+       
+        contentType: "application/json; charset=utf-8",
+        
+        dataType: "json"
+    });
+</script>
+<h2>Register</h2>

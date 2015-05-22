@@ -21,6 +21,46 @@ namespace UserService
         [OperationContract]
         [WebGet(UriTemplate = "Roles", ResponseFormat = WebMessageFormat.Json)]
         UserService.Models.Role[] GetRoles();
+
+        [OperationContract]
+        [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json)]
+       bool InsertUser(UserDetails user);
+        [OperationContract]
+        [WebInvoke(Method = "POST", RequestFormat = WebMessageFormat.Json, UriTemplate = "InsertUser1/username={username}")]
+       bool InsertUser1(string username);
+    }
+    [DataContract]
+    public class UserDetails
+    {
+        string username = string.Empty;
+        string password = string.Empty;
+        int roleId = 0;
+        string email = string.Empty;
+
+        [DataMember]
+        public string UserName
+        {
+            get { return username; }
+            set { username = value; }
+        }
+        [DataMember]
+        public string Password
+        {
+            get { return password; }
+            set { password = value; }
+        }
+        [DataMember]
+        public int IdRole
+        {
+            get { return roleId; }
+            set { roleId = value; }
+        }
+        [DataMember]
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
+        }
     }
 
   

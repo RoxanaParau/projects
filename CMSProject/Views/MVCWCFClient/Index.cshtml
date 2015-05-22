@@ -26,6 +26,7 @@
                         <tr>
                             <td>UserId</td>
                             <td>UserName</td>
+                            <td>Email</td>
                             <td>Password</td>
                             <td>IdRole</td>
                            
@@ -33,10 +34,11 @@
                     </thead>
                     <tbody ng-repeat="User in Users">
                         <tr>
-                            <td> <span>{{User.Id}}</span></td>
+                            <td> <span>{{User.ID}}</span></td>
                             <td> <span>{{User.Username}}</span></td>
+                             <td> <span>{{User.Email}}</span></td>
                             <td> <span>{{User.Password}}</span></td>
-                            <td> <span>{{User.IdRole}}</span></td>
+                            <td> <span>{{User.role_ID}}</span></td>
                           
                         </tr>
                     </tbody>
