@@ -1,0 +1,15 @@
+D:\other\CMSProject\UserService\bin\UserService.dll
+D:\other\CMSProject\UserService\bin\UserService.pdb
+D:\other\CMSProject\UserService\bin\CMSProject.dll
+D:\other\CMSProject\UserService\bin\EntityFramework.dll
+D:\other\CMSProject\UserService\bin\EntityFramework.SqlServer.dll
+D:\other\CMSProject\UserService\bin\System.Web.Mvc.dll
+D:\other\CMSProject\UserService\bin\System.Web.Optimization.dll
+D:\other\CMSProject\UserService\bin\Newtonsoft.Json.dll
+D:\other\CMSProject\UserService\bin\CMSProject.pdb
+D:\other\CMSProject\UserService\bin\EntityFramework.xml
+D:\other\CMSProject\UserService\bin\EntityFramework.SqlServer.xml
+D:\other\CMSProject\UserService\bin\System.Web.Mvc.xml
+D:\other\CMSProject\UserService\obj\Release\UserService.csprojResolveAssemblyReference.cache
+D:\other\CMSProject\UserService\obj\Release\UserService.dll
+D:\other\CMSProject\UserService\obj\Release\UserService.pdb

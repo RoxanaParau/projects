@@ -1,0 +1,6 @@
+﻿<UserDetails xmlns="http://schemas.datacontract.org/2004/07/UserService">
+  <Email>String content2</Email>
+  <IdRole>2147483647</IdRole>
+  <Password>String content2</Password>
+  <UserName>String content2</UserName>
+</UserDetails>
