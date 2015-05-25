@@ -4,7 +4,7 @@
 app.service("RESTClientService", function ($http) {
 
     this.get = function () {
-        return $http.get("http://localhost:50678/Service1.svc/Users");
+        return $http.get("http://localhost:50679/Service1.svc/Users");
     };
 });
 /*

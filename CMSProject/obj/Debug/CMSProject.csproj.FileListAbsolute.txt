@@ -20,7 +20,6 @@ D:\other\CMSProject\CMSProject\bin\System.Web.Razor.xml
 D:\other\CMSProject\CMSProject\bin\System.Web.WebPages.xml
 D:\other\CMSProject\CMSProject\bin\System.Web.WebPages.Deployment.xml
 D:\other\CMSProject\CMSProject\bin\System.Web.WebPages.Razor.xml
-D:\other\CMSProject\CMSProject\obj\Debug\CMSProject.csprojResolveAssemblyReference.cache
 D:\other\CMSProject\CMSProject\obj\Debug\CMSProject.dll
 D:\other\CMSProject\CMSProject\obj\Debug\CMSProject.pdb
 D:\other\CMSProject\CMSProject\bin\EntityFramework.SqlServer.dll
@@ -29,3 +28,4 @@ D:\other\CMSProject\CMSProject\bin\PagedList.dll
 D:\other\CMSProject\CMSProject\bin\PagedList.Mvc.dll
 D:\other\CMSProject\CMSProject\bin\PagedList.xml
 D:\other\CMSProject\CMSProject\bin\PagedList.Mvc.xml
+D:\other\CMSProject\CMSProject\obj\Debug\CMSProject.csprojResolveAssemblyReference.cache
