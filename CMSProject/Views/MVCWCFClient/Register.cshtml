@@ -1,11 +1,21 @@
-﻿@{
+﻿@model CMSProject.Models.Register
+@{
     ViewBag.Title = "Register";
 }
 
 <h2>Register</h2>
 @using (Html.BeginForm("Register", "MVCWCFClient", FormMethod.Post))
 {
-    <!-- form goes here -->
+   <p>
+            Your name: @Html.TextBoxFor(x => x.username)
+        </p>
+        <p>
+            Your email: @Html.TextBoxFor(x => x.email)</p>
+        <p>
+            Your role: @Html.TextBoxFor(x => x.roleId)</p>
+        <p>
+           Your password: @Html.PasswordFor(x=>x.password)</p>       
 
     <input type="submit" value="Sign Up" />
 }
+<p>@ViewBag.result<p/>

@@ -17,15 +17,20 @@ namespace UserService
         [OperationContract]
         [WebGet(UriTemplate = "Users", ResponseFormat = WebMessageFormat.Json)]
         UserService.Models.User[] GetUsers();
-      
+
         [OperationContract]
         [WebGet(UriTemplate = "Roles", ResponseFormat = WebMessageFormat.Json)]
         UserService.Models.Role[] GetRoles();
 
         [OperationContract]
-        [WebInvoke(UriTemplate = "InsertUser", Method = "POST",ResponseFormat=WebMessageFormat.Xml,RequestFormat=WebMessageFormat.Xml,BodyStyle=WebMessageBodyStyle.Bare)]
+        [WebInvoke(UriTemplate = "InsertUser", Method = "POST", ResponseFormat = WebMessageFormat.Xml, RequestFormat = WebMessageFormat.Xml, BodyStyle = WebMessageBodyStyle.Bare)]
         bool InsertUser(UserDetails user);
-      
+        [OperationContract]
+        [WebInvoke(UriTemplate = "GetUserId", Method = "POST", ResponseFormat = WebMessageFormat.Xml, RequestFormat = WebMessageFormat.Xml, BodyStyle = WebMessageBodyStyle.Bare)]
+        int GetuserId(UserDetails loginUser);
+        [OperationContract]
+        [WebInvoke(UriTemplate = "GetUser", Method = "POST", ResponseFormat = WebMessageFormat.Xml, RequestFormat = WebMessageFormat.Xml,BodyStyle = WebMessageBodyStyle.Bare)]
+        UserDetails GetUser(int id);
     }
     [DataContract]
     public class UserDetails
@@ -60,6 +65,4 @@ namespace UserService
             set { email = value; }
         }
     }
-
-  
 }
